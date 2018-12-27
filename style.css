@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-size: cover;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("images/background.jpg");
+    flex-direction: column;
+}
+
+.header-container {
+    text-align: center;
+    padding-top: 32vh;
+}
+
+h1 {
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+.header-text {
+    margin:0;
+    padding:0;
+    color: #fff;
+    font-size: 40px;
+}
+
+
+.bubble {
+    width: 60px;
+    height: 60px;
+    background: #b8e0df;
+    border-radius: 200px;
+    position: absolute;
+}
+
+.x1 {
+    right: 200px;
+    transform: scale(0.9);
+    opacity: 0.2;
+    animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    right: 600px;
+    transform: scale(0.6);
+    opacity: 0.5;
+    animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+
+.x3 {
+    left: 800px;
+    transform: scale(0.8);
+    opacity: 0.3;
+    animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+}
+.x4 {
+    left: 450px;
+    transform: scale(0.75);
+    opacity: 0.35;
+    animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+}
+.x5 {
+    left: 150px;
+    transform: scale(0.8);
+    opacity: 0.3;
+    animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveclouds {
+    0% {
+        top: 900px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left:0;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+#navbar {
+    align-self: flex-end;
+    margin:0;
+    padding: 10px 35px;
+    display: block;
+
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 12px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.nav-item:after {
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0px;
+    transition: width .3s ease-in-out;
+    position: relative;
+    top: 10px;
+}
+
+.nav-item:hover:after,
+.nav-item:focus:after {
+    width: 100%;
+}
+
+h2 {
+    color: #4e8a82;
+    font-size: 45px;
+    margin: 0;
+    padding: 60px 10px 30px 10px;
+    text-align: center;
+}
+

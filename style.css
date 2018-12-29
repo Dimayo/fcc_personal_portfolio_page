@@ -184,7 +184,6 @@ h2 {
 .front-card {
     z-index: 2;
     transform: rotateY(0deg);
-    border: 4px solid #4e8a82;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,8 +191,23 @@ h2 {
 
 .back-card {
     transform: rotateY(-180deg);
-    background-image: linear-gradient(to left bottom, #b8e0df, #a4cfcd, #8fbfbc, #7cafaa, #689f99, #5e958f, #548c86, #4a827c, #477c77, #447572, #426f6d, #3f6968);
     color: #fff;
+}
+
+.back-card.card1 {
+    background-image: linear-gradient(to left bottom, #caf8f6, #b4e2e0, #9fccca, #8ab7b5, #76a2a0, #689492, #5a8684, #4d7876, #426d6b, #376260, #2d5755, #224c4b);
+}
+
+.back-card.card2 {
+    background-image: linear-gradient(to left bottom, #ceccfa, #bdbbe9, #adabd8, #9d9bc7, #8d8bb7, #7f7ea9, #71719b, #64648d, #56567e, #47486f, #3a3b61, #2c2e53);
+}
+
+.back-card.card3 {
+    background-image: linear-gradient(to left bottom, #c3e5ff, #adcfeb, #98bad6, #83a5c2, #6f91af, #6284a3, #567797, #496b8b, #416383, #395c7a, #305472, #284d6a);
+}
+
+.back-card.card4 {
+    background-image: linear-gradient(to left bottom, #ffe9ff, #ead0ea, #d5b8d5, #c19fc0, #ad88ac, #9d779c, #8d668c, #7e567c, #6e486d, #5f3a5e, #502c50, #421f42);
 }
 
 .card-container:hover .flip-card{
@@ -205,8 +219,23 @@ h2 {
     font-size: 35px;
     padding: 8px;
     margin-bottom: 50px;
-    background-color: #4e8a82;
     border-radius: 30px;
+}
+
+.card1 .card-headline {
+    background-color: #4e8a82;
+}
+
+.card2 .card-headline {
+    background-color: #7877A1;
+}
+
+.card3 .card-headline {
+    background-color:  #547696;
+}
+
+.card4 .card-headline {
+    background-color:  #A0779E;
 }
 
 .project-tile {
@@ -220,21 +249,25 @@ h2 {
 .front-card.card1 {
     background-image: url("images/tribute.png");
     background-size: cover;
+    border: 4px solid #4e8a82;
 }
 
 .front-card.card2 {
     background-image: url("images/landing.png");
     background-size: cover;
+    border: 4px solid #7877A1;
 }
 
 .front-card.card3 {
     background-image: url("images/survey.png");
     background-size: cover;
+    border: 4px solid #547696;
 }
 
 .front-card.card4 {
     background-image: url("images/documentation.png");
     background-size: cover;
+    border: 4px solid #A0779E;
 }
 
 .card-text {

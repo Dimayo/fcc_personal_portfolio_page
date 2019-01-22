@@ -20,7 +20,7 @@ header {
 
 #welcome-section {
     text-align: center;
-    height: 100vh;
+    height: 88vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,20 +110,19 @@ h1 {
     margin:0;
     padding: 0px 35px;
     display: block;
-    position: fixed;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    z-index: 999;
 }
 
+
+
 .nav-item {
-    text-decoration: none;
     color: #fff;
+    text-decoration: none;
     padding: 20px 10px;
     display: inline-block;
     font-size: 16px;
     line-height: 1;
     cursor: pointer;
+    transition: all 0.4s ease;
 }
 
 .nav-item:after {
@@ -272,7 +271,7 @@ h2 {
 .card-text {
     margin: 0;
     padding: 30px 20px 5px 20px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -424,10 +423,6 @@ form {
 
 @media (max-width: 1310px) {
 
-  #navbar{
-    display: none;
-  }
-
     .project-tile {
         flex-wrap: wrap;
     }
@@ -439,6 +434,10 @@ form {
         justify-content: center;
     }
 
+     #navbar {
+         display: none;
+     }
+
 }
 
 @media (max-width: 920px) {
@@ -446,6 +445,7 @@ form {
     .card-container {
         width: 350px;
     }
+
 }
 
 @media (max-width: 670px) {

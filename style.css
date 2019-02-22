@@ -312,6 +312,10 @@ h2 {
     padding: 0 0 10px 0;
 }
 
+.techimg {
+    padding: 0 3px;
+}
+
 #contact {
     background-image: linear-gradient(to right bottom, #80bfb6, #79b5ac, #73aba2, #6ca299, #66988f, #619189, #5b8a82, #56837c, #507c77, #4a7672, #446f6d, #3f6968);
 }

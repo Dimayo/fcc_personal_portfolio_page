@@ -22,9 +22,18 @@ header {
     flex-direction: column;
 }
 
+.part {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+ .show {
+     opacity: 1 !important;
+ }
+
 #welcome-section {
     text-align: center;
-    height: 88vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +128,7 @@ h1 {
 
 
 .nav-item {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     padding: 20px 10px;
     display: inline-block;
@@ -140,8 +149,7 @@ h1 {
     top: 10px;
 }
 
-.nav-item:hover:after,
-.nav-item:focus:after {
+.nav-item:hover:after {
     width: 100%;
 }
 
@@ -442,10 +450,6 @@ form {
         justify-content: center;
     }
 
-     #navbar {
-         display: none;
-     }
-
 }
 
 @media (max-width: 920px) {
@@ -464,6 +468,10 @@ form {
 
     .textarea {
         margin-top: 50px;
+    }
+
+    #navbar {
+        align-self: center;
     }
 
 }

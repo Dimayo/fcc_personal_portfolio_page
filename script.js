@@ -1,6 +1,6 @@
 //Smooth scrolling
 (function navSmoothScrolling() {
-    "use strict";
+   
     const navLinks = document.querySelectorAll('.nav-item');
 
     for (let n in navLinks) {
@@ -19,7 +19,6 @@
 
 //Scroll change
 (function scrollChange() {
-    "use strict";
 
     const part = document.querySelector('.part');
 

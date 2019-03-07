@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="document" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">
+
+        <nav class="navbar">
+            <a class="navbar__item" href="#projects">Portfolio</a>
+            <a class="navbar__item" href="#contact">Contact</a>
+        </nav>
+
+        <div class="welcome-section">
+            <h1 class="welcome-section__title">Hi! I'm Dima</h1>
+            <p class="welcome-section__text">a web developer</p>
+            <a class="welcome-section__link" href="https://github.com/Dimayo" target="_blank"><img class="welcome-section__image"
+                    src="images/github.svg" width="37" height="37" alt=""></a>
+        </div>
+
+        <div class="bubbles">
+            <div class="bubbles__item bubbles__item_first"></div>
+            <div class="bubbles__item bubbles__item_second"></div>
+            <div class="bubbles__item bubbles__item_third"></div>
+            <div class="bubbles__item bubbles__item_fourth"></div>
+            <div class="bubbles__item bubbles__item_fifth"></div>
+        </div>
+
+    </header>
+
+    <section class="projects part" id="projects">
+
+        <h2 class="projects__title">These are my projects</h2>
+        <div class="projects__inner">
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front card__front_first">
+                        <h3 class="card__headline card__headline_first">Survey</h3>
+                    </div>
+                    <div class="card__back card__back_first">
+                        <p class="card__text">Simple survey form with non-standard checkboxes.</p>
+                        <p class="card__images">
+                            <img src="images/html.svg" class="card__image" width="31" height="31" alt="">
+                            <img src="images/sass.svg" class="card__image" width="34" height="34" alt="">
+                            <img src="images/webpack.svg" class="card__image" width="30" height="30" alt="">
+                        </p>
+                        <p class="card__links"> <a class="card__link button" href="https://dimayo.github.io/fcc_survey_form/"
+                                target="_blank">Demo</a><a class="card__link button" href="https://github.com/Dimayo/fcc_survey_form"
+                                target="_blank">Code</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front card__front_second">
+                        <h3 class="card__headline card__headline_second">Tribute</h3>
+                    </div>
+                    <div class="card__back card__back_second">
+                        <p class="card__text">Tribute page to Steve Jobs. The parallax effect is used here.</p>
+                        <p class="card__images">
+                            <img src="images/html.svg" class="card__image" width="31" height="31" alt="">
+                            <img src="images/sass.svg" class="card__image" width="34" height="34" alt="">
+                            <img src="images/webpack.svg" class="card__image" width="30" height="30" alt="">
+                        </p>
+                        <p class="card__links"> <a class="card__link button" href="https://dimayo.github.io/fcc_tribute_page/"
+                                target="_blank">Demo</a><a class="card__link button" href="https://github.com/Dimayo/fcc_tribute_page"
+                                target="_blank">Code</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front card__front_third">
+                        <h3 class="card__headline card__headline_third">Landing</h3>
+                    </div>
+                    <div class="card__back card__back_third">
+                        <p class="card__text">Landing page for food company. I used css grid and flexbox there.</p>
+                        <p class="card__images">
+                            <img src="images/html.svg" class="card__image" width="31" height="31" alt="">
+                            <img src="images/css.svg" class="card__image" width="27" height="31" alt="">
+                            <img src="images/javascript.svg" class="card__image" width="30" height="31" alt="">
+                        </p>
+                        <p class="card__links"> <a class="card__link button" href="https://dimayo.github.io/fcc_landing_page/"
+                                target="_blank">Demo</a><a class="card__link button" href="https://github.com/Dimayo/fcc_landing_page"
+                                target="_blank">Code</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__inner">
+                    <div class="card__front card__front_fourth">
+                        <h3 class="card__headline card__headline_fourth">Documentation</h3>
+                    </div>
+                    <div class="card__back card__back_fourth">
+                        <p class="card__text">Responsive technical documentation page for CSS.</p>
+                        <p class="card__images">
+                            <img src="images/html.svg" class="card__image" width="31" height="31" alt="">
+                            <img src="images/sass.svg" class="card__image" width="34" height="34" alt="">
+                            <img src="images/webpack.svg" class="card__image" width="30" height="30" alt="">
+                        </p>
+                        <p class="card__links"><a class="card__link button" href="https://dimayo.github.io/fcc_technical_documentation_page/"
+                                target="_blank">Demo</a><a class="card__link button" href="https://github.com/Dimayo/fcc_technical_documentation_page"
+                                target="_blank">Code</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="contact" id="contact">
+
+        <h2 class="contact__headline">Send me a message</h2>
+
+        <form class="form" action="https://formspree.io/mayorkind@gmail.com" method="POST" target="_blank">
+            <div class="form__inner">
+                <div class="form__items">
+                    <div class="form__name position">
+                        <label for="name" class="label form__label">Name</label>
+                        <input class="form__input form__input_name" type="text" name="new-name" required>
+                    </div>
+
+                    <div class="form__email position">
+                        <label for="email" class="label form__label">Email</label>
+                        <input class="form__input" type="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="textarea position">
+                    <label class="label textarea__label" for="message">Message</label>
+                    <textarea name="message" class="textarea__input" style="resize:none;" cols="30" rows="6" required></textarea>
+                </div>
+            </div>
+
+            <div class="submit__wrapper">
+                <button class="submit button" id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </footer>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

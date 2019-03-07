@@ -1,0 +1,36 @@
+.navbar {
+    margin: 0;
+    padding: 0px 35px;
+    display: block;
+    align-self: center;
+
+    @media (min-width: 670px) {
+        align-self: flex-end;
+    }
+
+    &__item {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 20px 10px;
+        display: inline-block;
+        font-size: 16px;
+        line-height: 1;
+        cursor: pointer;
+        transition: all 0.4s ease;
+
+        &:after {
+            background-color: #fff;
+            display: block;
+            content: "";
+            height: 2px;
+            width: 0;
+            transition: width .3s ease-in-out;
+            position: relative;
+            top: 10px;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}

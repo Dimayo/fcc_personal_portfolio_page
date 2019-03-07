@@ -1,0 +1,16 @@
+.submit {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    width: 170px;
+    height: 40px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    border: 2px solid #fff;
+    cursor: pointer;
+
+    &__wrapper {
+        align-self: center;
+        padding: 50px 20px 50px 20px;
+    }
+}

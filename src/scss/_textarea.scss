@@ -1,0 +1,24 @@
+.textarea {
+    margin-top: 50px;
+
+    @media (min-width: 670px) {
+        margin-top: 0;
+    }
+
+
+    &__input {
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 16px;
+        outline: none;
+        font-family: 'Raleway', sans-serif;
+        padding: 10px;
+        background-color: transparent;
+    }
+
+    &__label {
+        top: -35px;
+        left: -15px
+    }
+}

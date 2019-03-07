@@ -1,0 +1,66 @@
+.bubbles {
+    &__item {
+        width: 60px;
+        height: 60px;
+        background: #b8e0df;
+        border-radius: 200px;
+        position: absolute;
+
+        &_first {
+            right: 14vw;
+            transform: scale(0.9);
+            opacity: 0.2;
+            animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+        }
+
+        &_second {
+            right: 25vw;
+            transform: scale(0.6);
+            opacity: 0.5;
+            animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+        }
+
+        &_third {
+            left: 55vw;
+            transform: scale(0.8);
+            opacity: 0.3;
+            animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+        }
+
+        &_fourth {
+            left: 36vw;
+            transform: scale(0.75);
+            opacity: 0.35;
+            animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+        }
+
+        &_fifth {
+            left: 12vw;
+            transform: scale(0.8);
+            opacity: 0.3;
+            animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+        }
+    }
+}
+
+@keyframes moveclouds {
+    0% {
+        top: 90vh;
+    }
+
+    100% {
+        top: -10vh;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 50px;
+    }
+}

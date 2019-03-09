@@ -25,7 +25,6 @@
             transform: scale(0.8);
             opacity: 0.3;
             animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-
         }
 
         &_fourth {
@@ -33,7 +32,6 @@
             transform: scale(0.75);
             opacity: 0.35;
             animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
-
         }
 
         &_fifth {

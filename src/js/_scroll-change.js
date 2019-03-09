@@ -1,4 +1,4 @@
-export default (function scrollChange() {
+(function scrollChange() {
 
     const part = document.querySelector('.part');
 

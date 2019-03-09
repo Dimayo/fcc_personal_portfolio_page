@@ -1,4 +1,4 @@
-export default (function navSmoothScrolling() {
+(function navSmoothScrolling() {
 
     const navLinks = document.querySelectorAll('.navbar__item');
 
